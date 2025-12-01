@@ -1,0 +1,181 @@
+:root {
+    --banner-width: 1920;
+    --banner-height: 810;
+
+    font-family: 'Bahnschrift', Times, serif;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    overflow: auto;
+
+    background-color: rgb(65, 65, 65);
+}
+
+h1 {
+    text-align: center;
+
+    font-weight: lighter;
+    font-size: 6vw;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#model-start {
+    display: flex;
+
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+
+    text-align: center;
+
+    width: 30vw;
+    height: 2vw;
+
+    font-size: 1.5vw;
+    font-weight: lighter;
+
+    background-color: rgb(180, 0, 0);
+    color: rgb(255, 80, 80);
+    
+    border-color: rgb(255, 80, 80);
+
+    border-radius: 2px;
+
+    margin-top: 2%;
+}
+
+#webcam-container {
+    display: flex;
+
+    align-items:center;
+    justify-self: center;
+    justify-content: center;
+
+    margin-top: 2%;
+
+    width: 30vw;
+    height: 30vw;
+
+    background-color: black;
+}
+
+.tutorial-header {
+    background-color: rgba(0, 0, 0, 0.75);
+
+    padding-left: 5%;
+    margin: 0%;
+}
+
+.text-block {
+    font-size: x-large;
+    font-weight: lighter;
+    font-style: italic;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    padding: 2%;
+}
+
+.dropdown-content {
+    position: relative;
+    display: block;
+
+    padding: 2%;
+
+    height: auto;
+
+    display: none;
+}
+
+.dropdown {
+    font-size: x-large;
+    font-weight: lighter;
+    font-style: italic;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    user-select: none;
+}
+
+.dropdown-header {
+    background-color: rgba(0, 0, 0, 0.5);
+        
+    margin-bottom: 2%;
+
+    padding: 1%;
+
+    position: relative;
+}
+
+.separator {
+    width: 80%;
+    height: 2px;
+
+    background-color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.interactive-ui {
+    margin-top: 1%;
+    font-size: x-large;
+}
+
+#content {
+    position: relative;
+}
+
+#model-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    text-align: center;
+    justify-content: center;
+}
+
+#tutorial {
+    padding: 5%;
+    padding-top: 7%;
+    padding-bottom: 5%;
+
+    background-color: rgb(30, 30, 30);
+    background-image: url(assets/tutorialtile.png);
+
+    color: white;
+
+    scroll-behavior: smooth;
+
+    position: relative;
+
+    filter: blur(20px);
+}
+
+#page-banner {
+    padding: 0px;
+    margin: 0px;
+
+    width: 100%;
+    height: calc((100vw * --banner-height) / --banner-width);
+
+    position: relative;
+}
